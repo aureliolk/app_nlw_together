@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/button";
+import {ButtonOld, ButtonIncrement} from "./components/button_all"
+import "./services/firebase"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+   <h1>Yous is Programmer</h1>
+   <Button text="Button With Export Default"/>
+   <Button>Clique Aqui</Button>
+   <Button></Button>
+    <br></br>
+    <ButtonOld text="Button 2 outwith Export Default"/>
+    <ButtonOld/>
+    <ButtonOld/>
+    <br></br>
+    <ButtonIncrement />
+    <ButtonIncrement />
+    <ButtonIncrement />
+    <ButtonIncrement />
+    </>
   );
 }
 
