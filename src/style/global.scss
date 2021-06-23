@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_v1:#f8f8f8;
+    --color_v2:#29292e;
+    --color_bg_asside:#835afd;
+    --color_font:#fff;
+    --border_color_v1:#a8a8b3;
+    --button_google:#ea4335;
+
+
+    --font_v1:'Roboto', sans-serif;
+    --font_v2:'Poppins', sans-serif;
+}
+
+body,input,button,textarea{
+    font: 400 16px var(--font_v1)
+}
