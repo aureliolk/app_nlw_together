@@ -36,6 +36,11 @@ export function Home() {
             return
         }
 
+        if(roomRef.val().endedAt){
+            alert('Sala Ja Fechada')
+            return
+        }
+
         history.push(`/rooms/${codeRoom}`)
     }
 
